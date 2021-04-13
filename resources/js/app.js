@@ -7,8 +7,6 @@
  import Vue from 'vue'
  window.Vue = Vue;
  require('./bootstrap');
-
- import Vue from 'vue'
 Vue.use(vue-braintree);
 /**
  * The following block of code may be used to automatically register your
@@ -31,4 +29,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+
+    data() {
+        return {
+            names:['mimmo','ciro','mario','giacomo']
+        }
+    },
 });
